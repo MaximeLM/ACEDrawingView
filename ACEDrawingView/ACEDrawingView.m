@@ -417,11 +417,13 @@
 
 - (void)keyboardDidShow:(NSNotification *)notification
 {
+    /*
     if ( UIInterfaceOrientationIsLandscape([[UIDevice currentDevice] orientation])) {
         [self landscapeChanges:notification];
     } else {
         [self portraitChanges:notification];
     }
+     */
 }
 
 - (void)landscapeChanges:(NSNotification *)notification {
@@ -458,7 +460,7 @@
 
 -(void)keyboardDidHide:(NSNotification *)notification
 {
-    self.frame = CGRectMake(self.frame.origin.x,self.originalFrameYPos,self.frame.size.width,self.frame.size.height);
+    //self.frame = CGRectMake(self.frame.origin.x,self.originalFrameYPos,self.frame.size.width,self.frame.size.height);
 }
 
 
